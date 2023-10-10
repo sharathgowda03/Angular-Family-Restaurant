@@ -1,0 +1,44 @@
+.success-container {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .success-title {
+    color: #4CAF50;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .success-message {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .user-name {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .booking-details {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .booking-details li {
+    margin: 5px 0;
+  }
+  
+  .booking-details li strong {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .success-container:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  

@@ -1,0 +1,30 @@
+<header>
+    <img src="../../assets/logo-for-the-family-restaurant-good-food-vector.jpg" alt="" id="restoLogo">
+    
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#" routerLink="/MenuSelection">Menu</a></li>
+            <li><a href="#" routerLink="/Services">Services</a></li>
+            <li><a href="#"routerLink="/About">About</a></li>
+            <li><a href="#"routerLink="/Contact">Contact</a></li>
+            <li><a href="#" routerLink="/OrderOnline">Order Online</a></li>
+            <li><a href="#" routerLink="/login">Logout</a></li>
+        </ul>
+    </nav>
+    
+</header>
+
+    <h1 class="heading">{{userName}} Welcome To Family Restaurant</h1>
+    <div class="body">
+        <label for="name" style="color: crimson;">Name</label>
+    <input type="text" placeholder="Enter the Name">
+    <button type="submit" style="color: rgb(240, 240, 247); background-color: blue;">Submit</button>
+        <!-- <input [(ngModel)]="userName" placeholder="enter the userName">
+        <button (click)="submitText()">SUBMIT</button> -->
+        <!-- <h2>Book The table</h2> -->
+        <button routerLink="/bookingTable" type="button" class="bookTableButton">BOOK  A  TABLE</button>
+    </div>
+    
+    
+
+

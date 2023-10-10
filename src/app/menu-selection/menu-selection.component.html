@@ -1,0 +1,62 @@
+<div class="menu-selection-container">
+    <h2 class="menu-selection-title">Menu Selection</h2>
+    <label for="menu" class="menu-label">Select a Menu:</label>
+    <select id="menu" class="menu-dropdown">
+        <option value="breakfast">Breakfast</option>
+        <option value="lunch">Lunch</option>
+        <option value="dinner">Dinner</option>
+    </select>
+    <h3 class="item-selection-title">Select Items:</h3>
+    <div class="menu-items" id="food-items">
+        <div class="menu-item" id="breakfast-items">
+            <div class="food-item">
+                <span class="food-name">Dosa</span>
+                <span class="food-description">A delicious South Indian dish.</span>
+                <span class="food-price">70/-</span>
+                <button class="add-to-order-button">Add</button>
+            </div>
+            <div class="food-item">
+                <span class="food-name">Pongal</span>
+                <span class="food-description">A traditional breakfast item.</span>
+                <span class="food-price">50/-</span>
+                <button class="add-to-order-button">Add</button>
+            </div>
+        </div>
+        <div class="menu-item" id="lunch-items">
+            <div class="food-item">
+                <span class="food-name">South Indian Thali</span>
+                <span class="food-description">A complete South Indian meal.</span>
+                <span class="food-price">140/-</span>
+                <button class="add-to-order-button">Add</button>
+            </div>
+            <div class="food-item">
+                <span class="food-name">North Indian Thali</span>
+                <span class="food-description">A flavorful North Indian meal.</span>
+                <span class="food-price">165/-</span>
+                <button class="add-to-order-button">Add</button>
+            </div>
+        </div>
+        <div class="menu-item" id="dinner-items">
+            <div class="food-item">
+                <span class="food-name">Akki Rotti</span>
+                <span class="food-description">A crispy rice-based dish.</span>
+                <span class="food-price">80/-</span>
+                <button class="add-to-order-button">Add</button>
+            </div>
+            <div class="food-item">
+                <span class="food-name">Ragi Rotti</span>
+                <span class="food-description">A healthy millet-based option.</span>
+                <span class="food-price">60/-</span>
+                <button class="add-to-order-button">Add</button>
+            </div>
+        </div>
+        <div class="order-summary">
+            <h3>Your Order:</h3>
+            <ul id="order-list">
+            </ul>
+        </div>
+        <div class="button-container">
+            <button class="place-order-button" routerLink="/payment">Place Order</button>
+        </div>
+    </div>
+</div>

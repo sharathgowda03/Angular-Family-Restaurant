@@ -1,0 +1,38 @@
+<div class="full-form">
+  <img src="../../assets/logo-for-the-family-restaurant-good-food-vector.jpg" alt="" class="logo">
+<div class="contact-form">
+    <h2>Contact Us</h2>
+    <form>
+      <div class="form-date">
+      <label for="date">Date Of Booking : </label>
+        <input [(ngModel)]="date" name="date"  type="date" id="date" name="date"  required>
+      </div>
+      <div class="form-time">
+        <label for="time">Time : </label>
+        <input [(ngModel)]="time"name="time" type="time" id="time" name="time"  required>
+      </div>
+      <div class="form-persons">
+        <label for="persons">Number of Guest : </label>
+        <input [(ngModel)]="persons" name="persons" type="number" id="persons" name="persons"  required>
+      </div>
+      <div class="form-name">
+        <label for="name">Name : </label>
+        <input [(ngModel)]="nameOfBooking" name="name" type="text" id="name" name="name"  required>
+      </div>
+      <div class="form-email">
+        <label for="email">Email : </label>
+        <input [(ngModel)]="email" name="email" type="email" id="email" name="email"  required>
+      </div>
+      <div class="form-mob">
+        <label for="mobile">Mobile Number : </label>
+        <input [(ngModel)]="mobile" name="mobile" type="tel" id="mobile" name="mobile" required>
+      </div>
+      <div class="form-comments">
+        <label for="comments">Comments : </label>
+        <textarea [(ngModel)]="comments" id="comments" name="comments" ></textarea>
+      </div>
+      <button routerLink="/bookingTableSucess" type="submit"  (click)="onSubmitted()" id="submit">Submit</button>
+    </form>
+  </div>
+</div>
+  

@@ -1,0 +1,91 @@
+body,
+h1,
+h2,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #030202;
+    color: #fff;
+}
+.hero img {
+    width: 10%;
+    margin-right: 1200px;
+    max-height: 500px;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: opacity 0.5s ease;
+}
+.hero img:hover {
+    opacity: 1;
+}
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-in-out;
+}
+main {
+    padding: 40px 0;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    animation: slideInLeft 1s ease-in-out;
+}
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    animation: fadeIn 1s ease-in-out;
+}
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 6%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

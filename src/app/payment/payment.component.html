@@ -1,0 +1,44 @@
+<div class="payment-container">
+    <h2 class="payment-title">Payment</h2>
+    <form class="payment-form" >
+        <div class="form-group">
+            <label for="cvv">Name</label>
+            <input [(ngModel)]="name" name="name" type="text" id="cvv" class="form-control" placeholder="Enter Name" required>
+        </div>
+        <div class="form-group">
+            <label for="cardNumber">Card Number:</label>
+            <input [(ngModel)]="card" name="name" type="number" id="cardNumber" class="form-control" placeholder="Enter card number" required>
+        </div>
+        <div class="form-group">
+            <label for="expiryDate">Expiry Date:</label>
+            <input [(ngModel)]="expiry" name="expiry" type="text" id="expiryDate" class="form-control" placeholder="MM/YY" required>
+        </div>
+        <div class="form-group">
+            <label for="cvv">CVV:</label>
+            <input [(ngModel)]="cvv" name="cvv" type="text" id="cvv" class="form-control" placeholder="Enter CVV" required>
+        </div>
+        <div class="form-group">
+            <label for="billingAddress">Billing Address:</label>
+            <input [(ngModel)]="billingAddress" name="billingAddress" type="text" id="billingAddress" class="form-control" placeholder="Enter billing address" required>
+        </div>
+        <h3>Select Payment Method:</h3><br>
+        <div class="form-check">
+            <input type="radio" id="creditCard" name="paymentMethod" class="form-check-input" value="creditCard" required>
+            <label for="creditCard" class="form-check-label">Credit Card</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" id="phonePay" name="paymentMethod" class="form-check-input" value="phonePay">
+            <label for="phonePay" class="form-check-label">Phone Pay</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" id="googlePay" name="paymentMethod" class="form-check-input" value="googlePay">
+            <label for="googlePay" class="form-check-label">Google Pay</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" id="cashOnDelivery" name="paymentMethod" class="form-check-input" value="cashOnDelivery">
+            <label for="cashOnDelivery" class="form-check-label">Cash on Delivery</label>
+        </div>
+
+        <button [disabled]="!name || !billingAddress || !expiry || !card || !cvv"  type="submit" class="submit-payment-button" (click)="onSubmit()">Submit Payment</button>
+    </form>
+</div>

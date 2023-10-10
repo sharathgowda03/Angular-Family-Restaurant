@@ -1,0 +1,44 @@
+<img src="../../assets/logo-for-the-family-restaurant-good-food-vector.jpg" alt="logo" id="logo">
+    <h2 class="resto">Family Restaurant EST. 2021</h2>
+    <div id="login">
+        <label for="username">UserName</label><br>
+        <input [(ngModel)]="userName" type="text" id="username" placeholder="Enter UserName"><br>
+        <label for="password">Password</label><br>
+        <input [(ngModel)]="password" type="password" id="password" placeholder="Enter Password"><br>
+        <a href="#" id="forgot-password">Forgot Password?</a>
+        <button  [disabled]="!userName || !password" routerLink="/home" id="loginbutton" (click)="showSuccess()">Login</button>
+  <div *ngIf="showSuccessMessage" class="success-message">
+    Success! You have logged in.
+  </div>
+    </div>
+    <footer>    
+        <div class="footer-content">
+            <div class="footer-logo">
+         
+                <img src="../../assets/logo-for-the-family-restaurant-good-food-vector.jpg" alt="Hotel Logo" id="footerimg">
+            </div>
+            <div class="footer-contact">
+
+                <p>3rd Sector HSR Layout,</p>
+                <p>Banglore</p>
+                <p>Email: familyresto@gmail.com</p>
+                <p>Phone: +91-80-1234 5678</p>
+            </div>
+            <div class="footer-social">
+                <a href="#"><img src="../../assets/fb.png" alt="Facebook" class="fb"></a>
+                <a href="#"><img src="../../assets/twitte.png" alt="Twitter" class="tw"></a>
+                <a href="#"><img src="../../assets/insta.jfif" alt="Instagram" class="insta"></a>
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Rooms</a></li>
+                    <li><a href="#">Dining</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Your Hotel. All rights reserved.</p>
+        </div>
+    </footer>

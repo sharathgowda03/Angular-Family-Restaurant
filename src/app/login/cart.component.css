@@ -1,0 +1,175 @@
+#login {
+    padding: 2000px 480px;
+    padding-top: 250px;
+    padding-bottom: 150px;
+    size: 50px;
+    background-color: rgb(3, 7, 8);
+
+}
+
+body {
+    background-color: rgb(242, 245, 247);
+}
+
+.resto {
+    text-align: center;
+    margin-bottom: 40px;
+    font-style: oblique;
+    font-size: 40px;
+    position: absolute;
+    color: rgb(211, 211, 229);
+    margin-top: 50px;
+    width: 100%;
+}
+
+#loginbutton {
+    padding-top: 5px;
+    background-color: rgb(102, 206, 237);
+    margin-top: 10px;
+    width: 100px;
+    margin: 40px;
+    margin-top: 20px;
+    border-width: 3px;
+    border-color: rgb(8, 8, 11);
+    color: rgb(180, 90, 11);
+    border-radius: 10px;
+}
+
+#loginbutton:hover {
+    background-color: rgb(35, 19, 94);
+    cursor: pointer;
+}
+
+#logo {
+    width: 200px;
+    position: absolute;
+    height: 150px;
+    border-radius: 20px;
+}
+
+label{
+    width: 200px;
+    height: 25px;
+    color: rgb(239, 239, 242);
+    border-radius: 7px;
+    font-style: italic;
+
+}
+
+#username {
+    width: 200px;
+    height: 25px;
+    color: rgb(8, 8, 13);
+    border-radius: 7px;
+    font-style: italic;
+}
+
+#password {
+    width: 200px;
+    height: 25px;
+    color: rgb(8, 8, 13);
+    border-radius: 7px;
+    font-style: italic;
+}
+
+footer {
+    background-color: black;
+    font-style: italic;
+    color: rgb(232, 27, 27);
+    padding: 10px;
+
+}
+
+#footerName {
+    margin-left: 45%;
+}
+
+#forgot-password {
+    display: block;
+    text-align: right;
+    margin-top: 5px;
+    padding-left: 20px;
+    text-decoration: none;
+    color: #f7f9fa;
+    text-align: center;
+    font-size: small;
+}
+
+#forgot-password:hover {
+    text-decoration: underline;
+    color: aqua;
+}
+
+footer {
+    background-color: #040202;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-logo img {
+    max-width: 150px;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
+
+.footer-social a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+
+.footer-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-menu li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#footerimg {
+    width: 150px;
+    height: 100px;
+}
+
+.insta {
+    width: 30px;
+    height: 30px;
+}
+
+.tw {
+    width: 30px;
+    height: 30px;
+}
+
+.fb {
+    width: 30px;
+    height: 30px;
+}
