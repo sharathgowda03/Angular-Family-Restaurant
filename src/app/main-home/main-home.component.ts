@@ -15,7 +15,7 @@ export class MainHomeComponent implements OnInit{
   ngOnInit() {
     setInterval(() => {
       this.changeBackgroundImage();
-    }, 5000); // Change image every 5 seconds (adjust as needed)
+    }, 3000);
   }
   changeBackgroundImage() {
     this.currentImageIndex = (this.currentImageIndex + 1) % this.images.length;
