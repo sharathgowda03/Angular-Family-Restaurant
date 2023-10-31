@@ -10,10 +10,12 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .payment-container {
+     position: relative;
     max-width: 500px;
     margin: 20px auto;
-    padding: 20px;
+    padding: 40px;
     background-color: #ecf3ee;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
@@ -25,6 +27,7 @@ body {
     margin-bottom: 20px;
     color: #059e1f;
 }
+
 .payment-form {
     text-align: left;
 }
@@ -40,6 +43,7 @@ body {
     border-radius: 5px;
     font-size: 16px;
 }
+
 .payment-form h3 {
     font-size: 20px;
     margin-top: 20px;
@@ -49,11 +53,13 @@ body {
 .form-check {
     margin-bottom: 10px;
 }
+
 .form-check-label {
     font-size: 16px;
     color: #06f836;
     margin-left: 10px;
 }
+
 .submit-payment-button {
     background-color: #00ff15;
     color: white;
@@ -68,6 +74,7 @@ body {
 .submit-payment-button:hover {
     background-color: #0d58ae;
 }
-label{
+
+label {
     color: #ff6200;
 }

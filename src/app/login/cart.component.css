@@ -24,19 +24,19 @@ body {
 
 #loginbutton {
     padding-top: 5px;
-    background-color: rgb(102, 206, 237);
-    margin-top: 10px;
+    background-color: rgb(21, 174, 225);
+    margin-top: 3px;
     width: 100px;
     margin: 40px;
     margin-top: 20px;
     border-width: 3px;
-    border-color: rgb(8, 8, 11);
-    color: rgb(180, 90, 11);
+    /* border-color: rgb(21, 174, 225); */
+    color: rgb(234, 7, 7);
     border-radius: 10px;
 }
 
 #loginbutton:hover {
-    background-color: rgb(35, 19, 94);
+    background-color: rgb(7, 7, 197);
     cursor: pointer;
 }
 
@@ -87,7 +87,7 @@ footer {
 #forgot-password {
     display: block;
     text-align: right;
-    margin-top: 5px;
+    margin-top: 10px;
     padding-left: 20px;
     text-decoration: none;
     color: #f7f9fa;

@@ -1,0 +1,134 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #070404;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* #restoLogo {
+    width: 80px; 
+    height: auto;
+} */
+
+nav {
+    margin-top: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffd700; 
+}
+
+.hero {
+    background-image: url('../../assets/Untitled-2020-09-09T182308.697.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fcfefa;
+    text-align: center;
+    padding: 100px; 
+
+}
+
+.hero h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff9800;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #ffba00;
+}
+
+.menu, .about, .contact {
+    padding: 40px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.hero {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.nav-links {
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+    margin: 1px;
+
+}
+ul>li>a {
+    text-decoration: none;
+    padding: 25px;
+    color: #ffff;
+    font-style: italic;
+}
+ul>li>a:hover {
+    border-radius: 8px;
+    color: #67a9f1;
+}
+#restoLogo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 100px;
+    border-radius: 10px;
+   
+    /* display: flex; */
+    /* justify-content: center; */
+    
+    /* padding-right: 600px; */
+    /* padding-top: 30px; */
+    /* margin-right: 100%; */
+}

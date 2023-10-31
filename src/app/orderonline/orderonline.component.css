@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,7 +11,7 @@ body {
     padding: 0;
 }
 header {
-    background-color: #007bff;
+    background-color: #060606;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -75,9 +75,10 @@ header h1 {
 .food-item p {
     color: #555;
     margin-top: 10px;
+    padding-bottom: 10px;
 }
 .order-button {
-    background-color: #007bff;
+    background-color: #1176e3;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -96,7 +97,7 @@ header h1 {
 }
 
 .place-order-button {
-    background-color: #007bff;
+    background-color: #1176e3;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -104,8 +105,48 @@ header h1 {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;margin-left: 270px;
 }
 
 .place-order-button:hover {
     background-color: #0056b3;
-}
+} 
+
+
+.container {
+    text-align: center;
+  }
+  
+  .food-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .food-item {
+    width: 30%;
+    margin: 1%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .order-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .load-more-button {
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;margin-left: 46%;
+  }
+  

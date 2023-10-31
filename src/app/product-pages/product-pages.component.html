@@ -1,0 +1,20 @@
+<div class="product-list">
+    <div *ngFor="let product of products" class="product-item">
+        <img [src]="product.imageUrl" alt="{{ product.name }}" class="product-image">
+        <div class="product-details">
+            <h3>{{ product.name }}</h3>
+            <p class="product-price">$ {{ product.price }}</p>
+            <button (click)="addToCart(product)" class="add-to-cart-button">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<div class="pagination">
+    <button (click)="loadProducts(currentPage - 1)" [disabled]="currentPage === 1"
+        class="pagination-button">Previous</button>
+    <span *ngFor="let page of getPages()" [ngClass]="{'current-page': page === currentPage}" class="page-number">
+        {{ page }}
+    </span>
+    <button (click)="loadProducts(currentPage + 1)" [disabled]="currentPage === totalPages()"
+        class="pagination-button">Next</button>
+</div>

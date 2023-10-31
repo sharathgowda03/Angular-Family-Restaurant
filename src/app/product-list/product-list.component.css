@@ -1,0 +1,29 @@
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    cursor: pointer;
+}
+li:hover {
+   background-color: chartreuse;
+}
+li div {
+    margin: 5px 0;
+}
+strong {
+    font-weight: bold;
+}
+li {
+    animation: fadeIn 0.5s ease forwards;
+}

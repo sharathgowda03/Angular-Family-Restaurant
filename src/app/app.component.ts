@@ -1,4 +1,6 @@
+import { AuthService } from './auth-service.service';
 import { Component } from '@angular/core';
+import {  HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'HotelManagement';
+  constructor(private authService: AuthService) { }
+
+  ngOnInit() {
+    this.authService.startLogoutTimer(30000);}
+
+  @HostListener('document:mousemove')
+  onUserActivity() {
+    this.authService.resetLogoutTimer(30000); 
+  }
 }

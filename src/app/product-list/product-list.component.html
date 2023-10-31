@@ -1,1 +1,17 @@
-<p>product-list works!</p>
+<h1>Product List</h1>
+<ul>
+    <li *ngFor="let prod of products">
+        <div>
+            <strong>Product Name:</strong> {{ prod.prodName }}
+        </div>
+        <div>
+            <strong>Product Description:</strong> {{ prod.prodDescription }}
+        </div>
+        <div>
+            <strong>Product Price:</strong> {{ prod.prodPrice  }}
+        </div>
+        <div>
+            <strong>Product Availability:</strong> {{ prod.prodAvail ? 'Available' : 'Not Available' }}
+        </div>
+    </li>
+</ul>

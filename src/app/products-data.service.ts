@@ -4,10 +4,25 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ProductsDataService {
+  private products:any[]=[];
+  addProducts(product:any){
+    this.products.push(product);
+  }
+  getProducts(){
+    return this.products;
+  }
+
+
+//Home page field
   userName: string = '';
+
+//payment for placing the order fields 
+  selectedOption:string='';
+  cardType:string='';
   name: string = '';
   billingAddress: string = '';
-  
+
+  //booking table invoice feilds
   date: string = '';
   time: string = '';
   persons!: number;
@@ -15,26 +30,6 @@ export class ProductsDataService {
   email: string = '';
   mobile!: number;
   comments: string = '';
-
-  sendData(date: string, time: string, persons: number, nameOfBooking: string, email: string, mobile: number, comments: string) {
-    this.date = this.date;
-    this.time = time;
-    this.persons = persons;
-    this.nameOfBooking = nameOfBooking;
-    this.email = email;
-    this.mobile = mobile;
-    this.comments = comments;
-  }
-
-  recieveData() {
-    console.log(this.billingAddress,
-      this.date,
-      this.persons,
-      this.nameOfBooking,
-      this.email,
-      this.mobile,
-      this.comments)
-  }
 
   constructor() { }
 }

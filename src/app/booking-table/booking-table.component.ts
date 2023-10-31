@@ -17,11 +17,11 @@ export class BookingTableComponent {
   comments: string = '';
 
   constructor(private router: Router, private productData: ProductsDataService) { }
-  formData: any = {};
-  onSubmit() {
-    console.log(this.formData);
-  }
-  isSubmitted: boolean = false
+  // formData: any = {};
+  // onSubmit() {
+  //   console.log(this.formData);
+  // }
+  // isSubmitted: boolean = false
   onSubmitted() {
     this.productData.date=this.date;
     this.productData.time=this.time;
@@ -30,10 +30,10 @@ export class BookingTableComponent {
     this.productData.email=this.email;
     this.productData.mobile=this.mobile;
     this.productData.comments=this.comments;
-
-    this.productData.recieveData();
-
-    this.isSubmitted = true;
     this.router.navigate(['/bookingTableSucess'])
+    // this.productData.recieveData();
+
+    // this.isSubmitted = true;
+    
   }
 }

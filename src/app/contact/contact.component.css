@@ -7,7 +7,6 @@ body {
     background-color: #f2f2f2;
     color: #333;
 }
-
 header {
     background-color: #333;
     color: #fff;
@@ -66,7 +65,7 @@ textarea {
 }
 
 button {
-    background-color: #333;
+    background-color: #0a2acb;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -83,7 +82,6 @@ button:hover {
     list-style: none;
     margin-top: 10px;
 }
-
 .contact-info li {
     margin-bottom: 10px;
 }
@@ -103,4 +101,24 @@ footer {
         transform: translateX(0);
         opacity: 1;
     }
+}
+table {
+    border-collapse: collapse;
+    margin: auto;
+    width: 80%;
+}
+th {
+    background-color: #f2f2f2;
+}
+th, td {
+    padding: 8px;
+    border: 1px solid #dddddd;
+    text-align: left;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+img {
+    max-width: 100px;
+    max-height: 100px;
 }

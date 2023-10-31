@@ -15,13 +15,13 @@ export class BookingTableInvoiceComponent implements OnInit {
   mobile!: number;
   comments: string = '';
   constructor(private router: Router, private productData: ProductsDataService) {
-    this.productData.date = this.date;
-    this.productData.time = this.time;
-    this.productData.persons = this.persons;
-    this.productData.nameOfBooking = this.nameOfBooking;
-    this.productData.email = this.email;
-    this.productData.mobile = this.mobile;
-    this.productData.comments = this.comments;
+     this.date=this.productData.date; 
+     this.time= this.productData.time ;
+     this.persons=this.productData.persons;
+     this.nameOfBooking=this.productData.nameOfBooking ;
+     this.email=this.productData.email;
+     this.mobile=this.productData.mobile;
+     this.comments=this.productData.comments;
   }
   ngOnInit() {}
 

@@ -1,7 +1,7 @@
 <div class="full-form">
   <img src="../../assets/logo-for-the-family-restaurant-good-food-vector.jpg" alt="" class="logo">
 <div class="contact-form">
-    <h2>Contact Us</h2>
+  <i class="fa-solid fa-table"></i><h2>Book Table</h2>
     <form>
       <div class="form-date">
       <label for="date">Date Of Booking : </label>
@@ -31,7 +31,7 @@
         <label for="comments">Comments : </label>
         <textarea [(ngModel)]="comments" id="comments" name="comments" ></textarea>
       </div>
-      <button routerLink="/bookingTableSucess" type="submit"  (click)="onSubmitted()" id="submit">Submit</button>
+      <button  type="submit"  (click)="onSubmitted()" id="submit">Submit</button>
     </form>
   </div>
 </div>

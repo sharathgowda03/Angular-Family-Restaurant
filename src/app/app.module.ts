@@ -19,12 +19,20 @@ import { BookingTableInvoiceComponent } from './booking-table-invoice/booking-ta
 import { ServicesComponent } from './services/services.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { ProductPagesComponent } from './product-pages/product-pages.component';
+import { TravelInformationComponent } from './travel-information/travel-information.component';
+import { HomeModule } from './home/home.module';
+import {HttpClientModule} from '@angular/common/http';
+import { AuthComponent } from './auth/auth.component';
+import { Auth2Component } from './auth2/auth2.component';
+import { ContactSucessPageComponent } from './contact-sucess-page/contact-sucess-page.component';
+import { MainHomeComponent } from './main-home/main-home.component';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { HomeImageComponent } from './home-image/home-image.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { SuccessMessageDialogComponentComponent } from './success-message-dialog-component/success-message-dialog-component.component';
 
-const routes: Routes=[
-  {path:'home',component:HomeComponent},
-  {path:'',redirectTo:'/home',pathMatch:'full'},
-  {path:'payment',component:PaymentComponent}
-]
 
 
 @NgModule({
@@ -44,15 +52,26 @@ const routes: Routes=[
     BookingTableInvoiceComponent,
     ServicesComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    ProductPagesComponent,
+    TravelInformationComponent,
+    AuthComponent,
+    Auth2Component,
+    ContactSucessPageComponent,
+    MainHomeComponent,
+    SignInComponent,
+    SignUpComponent,
+    HomeImageComponent,
+    SuccessMessageDialogComponentComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule.forRoot(routes)
+    HttpClientModule,
+    MatDialogModule
+
   ],
-  exports: [RouterModule],
   providers: [],
   bootstrap: [AppComponent]
 })

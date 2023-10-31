@@ -1,30 +1,202 @@
 <header>
-    <img src="../../assets/logo-for-the-family-restaurant-good-food-vector.jpg" alt="" id="restoLogo">
-    
-    <nav>
-        <ul class="nav-links">
-            <li><a href="#" routerLink="/MenuSelection">Menu</a></li>
-            <li><a href="#" routerLink="/Services">Services</a></li>
-            <li><a href="#"routerLink="/About">About</a></li>
-            <li><a href="#"routerLink="/Contact">Contact</a></li>
-            <li><a href="#" routerLink="/OrderOnline">Order Online</a></li>
-            <li><a href="#" routerLink="/login">Logout</a></li>
-        </ul>
-    </nav>
-    
+  <img
+    src="../../assets/logo-for-the-family-restaurant-good-food-vector.jpg"
+    alt=""
+    id="restoLogo"/>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#" routerLink="/MenuSelection">Menu</a></li>
+      <li><a href="#" routerLink="/Services">Services</a></li>
+      <li><a href="#" routerLink="/About">About</a></li>
+      <li><a href="#" routerLink="/Contact">Contact</a></li>
+      <li><a href="#" routerLink="/OrderOnline">Order Online</a></li>
+      <li class="logout"><a href="#" routerLink="/Login">Logout</a></li>
+    </ul>
+  </nav>
 </header>
 
-    <h1 class="heading">{{userName}} Welcome To Family Restaurant</h1>
-    <div class="body">
-        <label for="name" style="color: crimson;">Name</label>
-    <input type="text" placeholder="Enter the Name">
-    <button type="submit" style="color: rgb(240, 240, 247); background-color: blue;">Submit</button>
-        <!-- <input [(ngModel)]="userName" placeholder="enter the userName">
-        <button (click)="submitText()">SUBMIT</button> -->
-        <!-- <h2>Book The table</h2> -->
-        <button routerLink="/bookingTable" type="button" class="bookTableButton">BOOK  A  TABLE</button>
+<h1 class="heading">{{ userName }} Welcome To Family Restaurant</h1>
+<div class="body">
+  <button routerLink="/bookingTable" type="button" class="bookTableButton">
+    BOOK A TABLE
+  </button>
+</div>
+<div class="special-offer-container">
+  <h1>Today's Special </h1>
+  <h1>&#8595;</h1>
+  <div class="special-food">
+    <img
+      src="../../assets/BiriyaniSpecial.jpeg"
+      alt="Special Offer Image"
+      class="offer-image"
+    />
+    <h2>Special Hyderabad Dum Biriyani</h2>
+    <p class="Template"><strong>Special Hyderabad Dum Biriyani</strong></p>
+    <p>
+      Hyderabad Dum Biriyani, a world-famous Indian delicacy, requires time and
+      experience to prepare but is well worth the effort. Long-grained rice
+      seasoned with aromatic spices like saffron and stacked with tender and
+      juicy chicken in a rich sauce. The dish is then covered, and the lid is
+      fastened with dough before the biryani is cooked over low heat. This is
+      unquestionably a special occasion meal.
+    </p>
+  </div>
+
+  <div class="special-food">
+    <img
+      src="../../assets/How-to-Make-North-Indian-Thali-Vegetarian-7.webp"
+      alt="Special Offer Image"
+      class="offer-image"
+    />
+    <h2>Thali</h2>
+    <p class="Template"><strong>North-Indian-Thali</strong></p>
+    <p class="description">
+      It is a complete meal in itself that serves all the nutrients required for
+      a balanced diet. The typical dishes of a North Indian Thali include dal
+      (lentil), rice, vegetable curry, roti (flat bread), dahi (yogurt), papad,
+      salad, a small amount of chutney or pickle and a sweet dish.
+    </p>
+  </div>
+
+  <div class="special-food">
+    <img
+      src="../../assets/benne dosa.jfif"
+      alt="Special Offer Image"
+      class="offer-image"
+    />
+    <h2>Davangere Benne Dose</h2>
+    <p class="Template"><strong>Benne Dose</strong></p>
+    <p class="description">
+      Davanagere Benne Dose is made from rice and urad dal batter fermented
+      overnight. Light and crispy frying, topped with butter makes Davanagere
+      benne Dose special.
+    </p>
+  </div>
+
+  <div class="features">
+    <div class="feature">
+      <span class="feature-icon"><span>&#10003;</span></span>
+      Quality and Fresh Ingredients
     </div>
-    
-    
+    <div class="feature">
+      <span class="feature-icon"><span>&#10003;</span></span>
+      House-made from scratch
+    </div>
+    <div class="feature">
+      <span class="feature-icon"><span>&#10003;</span></span>
+      Authentic Original Taste
+    </div>
+  </div>
 
+  <button class="order-button">Order Now</button>
+</div>
+<div class="client-reviews-container">
+  <h2>Our Clients Reviews</h2>
+  <p class="sayabtus">What our clients say about us</p>
+  <div class="star-ratings">
+    <span class="star">&#9733;</span>
+    <span class="star">&#9733;</span>
+    <span class="star">&#9733;</span>
+    <span class="star">&#9733;</span>
+    <span class="star">&#9733;</span>
+  </div>
+</div>
 
+<div class="client-reviews-container">
+  <div class="client-review">
+    <h3>Ganavi</h3>
+    <p class="review-meta">Local Guide</p>
+    <p>The ambience of the pace is superb.</p>
+  </div>
+
+  <div class="client-review">
+    <h3>Santhosh</h3>
+    <p class="review-meta">Local Guide</p>
+    <p>Excellent food and great service .</p>
+  </div>
+
+  <div class="client-review">
+    <h3>Aishwarya</h3>
+    <p class="review-meta">Local Guide</p>
+    <p>
+      The food was authentic and delicious. The menu is reasonably priced and
+      the portion was generous; I couldn’t finish my plate and ended up asking
+      for a box to takeout. Employees were super nice and welcoming. Will visit
+      this place again!
+    </p>
+  </div>
+
+  <div class="client-review">
+    <h3>Hemanth</h3>
+    <p class="review-meta">Local Guide</p>
+    <p>
+      This is a best family restaurant with lot of very nice item on their menu,
+      including the very good vegetarian items. The dal tadka is simply superb.
+    </p>
+  </div>
+
+  <a href="#" class="view-all-reviews">View All Reviews</a>
+</div>
+<footer>
+  <div class="footer-content">
+    <div class="footer-logo">
+      <img
+        src="../../assets/logo-for-the-family-restaurant-good-food-vector.jpg"
+        alt="Hotel Logo"
+        id="footerimg"
+      />
+    </div>
+    <div class="footer-contact">
+      <p>3rd Sector HSR Layout,</p>
+      <p>Banglore</p>
+      <p>Email: familyresto@gmail.com</p>
+      <p>Phone: +91-80-1234 5678</p>
+    </div>
+    <div class="footer-social">
+      <a href="#"
+        ><img src="../../assets/fb.png" alt="Facebook" class="fb"
+      /></a>
+      <a href="#"
+        ><img src="../../assets/twitte.png" alt="Twitter" class="tw"
+      /></a>
+      <a href="#"
+        ><img src="../../assets/insta.jfif" alt="Instagram" class="insta"
+      /></a>
+    </div>
+    <div class="footer-menu">
+      <ul>
+        <li><a href="http://localhost:4200/home">Home</a></li>
+        <li><a href="http://localhost:4200/Services">Services</a></li>
+        <li><a href="http://localhost:4200/Contact" routerLink="/Contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2023 Your Hotel. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- <div class="products">
+    <label for="prodName">Product Name:</label>
+    <input [(ngModel)]="prodName" type="text" placeholder="Enter the Product Name"><br>
+
+    <label for="prodDescription">Product Description:</label>
+    <input [(ngModel)]="prodDescription" type="text" placeholder="Enter the Product Description"><br>
+
+    <label for="prodPrice">Product Price:</label>
+    <input [(ngModel)]="prodPrice" type="number" placeholder="Enter the Product Price"><br>
+
+    <label for="prodAvail">Product Availability:</label>
+    <input [(ngModel)]="prodAvail" type="checkbox" class="checkbox"><br>
+</div>
+
+<div>
+    <button (click)="addProduct()" type="button">Add</button>
+    <button (click)="finish()" type="button">Finish</button>
+</div>
+<div *ngFor="let item of items" class="item">{{item}}</div>
+
+<div class="search">
+    <label for="search">Search:</label>
+    <input [(ngModel)]="search" type="text" placeholder="Search Products">
+</div> -->

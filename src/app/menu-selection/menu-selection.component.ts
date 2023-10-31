@@ -7,6 +7,12 @@ import { Router } from '@angular/router';
   styleUrls: ['./menu-selection.component.css']
 })
 export class MenuSelectionComponent {
+
+  // const menuDropdown = document.getElementById('menu') as HTMLSelectElement;
+
+
+
+
   selectedMenu: string = '';
   showSuccessMessage: boolean = false;
   constructor(
