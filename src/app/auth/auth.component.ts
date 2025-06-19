@@ -15,19 +15,19 @@ export class AuthComponent {
   @HostListener('document:keydown', ['$event'])
   onActivity(event: Event) {
     this.resetTimer();
-    this.startTimer();
+    // this.startTimer();
   }
  
-  startTimer() {
-    this.timerInterval = setInterval(() => {
-      if (this.timerValue > 0) {
-        this.timerValue--;
-      } else {
-        clearInterval(this.timerInterval);
-        this.router.navigate(['/Login']);
-      }
-    }, 1000);
-  }
+  // startTimer() {
+  //   this.timerInterval = setInterval(() => {
+  //     if (this.timerValue > 0) {
+  //       this.timerValue--;
+  //     } else {
+  //       clearInterval(this.timerInterval);
+  //       this.router.navigate(['/Login']);
+  //     }
+  //   }, 1000);
+  // }
   resetTimer() {
     clearInterval(this.timerInterval);
     this.timerValue = 50;

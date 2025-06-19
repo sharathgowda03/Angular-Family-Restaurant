@@ -1,394 +1,332 @@
-#restoLogo {
-    width: 140px;
-    position: absolute;
-    height: 90px;
-    border-radius: 10px;
-    padding-top: 30px;
-    margin-right: 100%;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#homePageImage {
-    margin: 100;
-    padding: 0;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    width: 100%;
-    height: 100vh;
-}
-
-header {
-    background-color: #020202;
-    color: #fdfcfc;
-    padding: 20px;
-
-}
-
-.nav-links {
-    display: flex;
-    justify-content: end;
-    list-style-type: none;
-    margin: 1px;
-}
-
-ul>li>a {
-    text-decoration: none;
-    padding: 25px;
-    color: #ffff;
-    font-style: italic;
-}
-
-ul>li>a:hover {
-    border-radius: 8px;
-    color: #67a9f1;
-}
-
-.heading {
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    color: #030b07;
-    background-color: hsl(0, 0%, 100%);
-    
-}
-
-.body {
-    background-image: url(../../assets/Awesome-4K-Food-Wallpaper-HD.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100vw;
-    min-height: 70vh;
-    height: 77vh;
-}
-
-.bookTableButton {
-    background-color: #007BFF;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    width: 9vw;
-    height: 5vh;
-    margin-top: 15%;
-    border-radius: 30px;
-    margin-left: 100px;
-    font-style: italic;
-}
-.bookTableButton:hover {
-    background-color: #0056b3;
-}
-
-h2 {
-    display: flex;
-    justify-content: center;
-    color: rgb(241, 99, 5);
-    font-style: italic;
-    padding-top: 50px;
-}
-.products {
-    background-color: #f4f4f4;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin: 10px;
-  }
-  label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  input {
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
-  button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    margin-right: 10px;
-  }
-  button.finish {
-    background-color: #28a745;
-  }
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  button.finish:hover {
-    background-color: #1e7e34;
-  }
-  .checkbox{
-    float: left;
-  }
-  .logout{
-    background-color: orange;
-    border-radius: 10px;
-    padding-bottom: 30x;
-  }
-  .logout :hover{
-   color: #020202;
-  }
-  .special-offer-container {
-    background-color: #f5f5f5;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  h2 {
-    font-size: 24px;
-  }
-  
-  p {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .features {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 20px;
-  }
-  
-  .feature {
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-  }
-  
-  .feature-icon {
-    font-size: 24px;
-    margin-right: 10px;
-  }
-  
-  .order-button {
-    background-color: #FF5733;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    padding-top: 10px;
-    margin-top: 10px;
-  }
-  
-  .order-button:hover {
-    background-color: #FF1F00;
-  }
-  .offer-image{
-    width: 300px;
-    height: 100px;
-    margin-top: 30px;
-}
-  .Template{
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
-  }
-  span {
-    color: #28a745;
-  }
-  .client-reviews-container {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  h2 {
-    font-size: 24px;
-  }
-  
-  .star-ratings {
-    font-size: 24px;
-  }
-  
-  .star {
-    color: gold;
-    margin: 0 5px;
-  }
-  
-  .client-reviews-container {
-  text-align: center;
-}
-
-.client-review {
-  background-color: #f5f5f5;
-  padding: 10px;
-  border-radius: 5px;
-  margin: 20px 0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.review-meta {
-  font-style: italic;
-  color: #888;
-  margin-bottom: 10px;
-}
-
-p {
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: left;
-}
-
-.view-all-reviews {
-  display: block;
-  text-decoration: none;
-  color: #007bff;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-.view-all-reviews:hover {
-  text-decoration: underline;
-}
-.sayabtus{
-  display: flex;
-  justify-content: center;
-}
-footer {
-  background-color: black;
-  font-style: italic;
-  color: rgb(232, 27, 27);
-  padding: 10px;
-
-}
-
-#footerName {
-  margin-left: 45%;
-}
-
-#forgot-password {
-  display: block;
-  text-align: right;
-  margin-top: 10px;
-  padding-left: 20px;
-  text-decoration: none;
-  color: #f7f9fa;
-  text-align: center;
-  font-size: small;
-}
-
-#forgot-password:hover {
-  text-decoration: underline;
-  color: aqua;
-}
-
-footer {
-  background-color: #040202;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-}
-
-.footer-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.footer-logo img {
-  max-width: 150px;
-}
-
-.footer-contact p {
-  margin: 5px 0;
-}
-
-.footer-social a {
-  text-decoration: none;
-  color: #fff;
-  margin: 0 10px;
-}
-
-.footer-menu ul {
-  list-style: none;
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+  margin: 0;
   padding: 0;
 }
 
-.footer-menu li {
-  display: inline;
-  margin: 0 10px;
-}
-
-.footer-menu a {
-  text-decoration: none;
+header {
+  background: white;
   color: #fff;
+  padding: -1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.footer-bottom {
-  margin-top: 20px;
+#restoLogo {
+     height: 90px;
+    padding-left: 34px;
+    padding-top: 4px;
+    width: 156px;
 }
 
+/* nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
 
-@media (max-width: 768px) {
-  .footer-content {
-      flex-direction: column;
-      align-items: center;
+nav a {
+  text-decoration: none;
+  color: #080707;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+.logout a {
+  color: #ff4d4d;
+} */
+
+/* Animation for the heading */
+.heading {
+  font-size: 2rem;
+  color: #0a75ad;
+  text-align: center;
+  font-weight: 900;
+  margin: 0rem 0;
+  opacity: 0; /* Initially hidden */
+  transform: translateY(-30px); /* Slide up effect */
+  animation: fadeInSlideDown 1.5s ease-out forwards;
+}
+
+/* Keyframes for fade-in and slide-down */
+@keyframes fadeInSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-#footerimg {
-  width: 150px;
-  height: 100px;
+.body {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
-.insta {
-  width: 30px;
-  height: 30px;
+.bookTableButton {
+  background-color: #0a75ad;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.tw {
-  width: 30px;
-  height: 30px;
+.bookTableButton:hover {
+  background-color: #094d75;
 }
 
-.fb {
-  width: 30px;
-  height: 30px;
-}
-.special-food {
-  background-color: #f5f5f5;
-  padding: 20px;
+.special-offer-container {
+  text-align: center;
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 1200px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba\(0, 0, 0, 0.1\);
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  margin: 20px 0;
 }
 
-.offer-image {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 20px;
+.special-offer-container h1 {
+  color: #0a75ad;
+  margin-bottom: 1rem;
 }
 
-h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
+.special-food {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+  gap: 1.5rem;
 }
-p {
-  font-size: 16px;
-  line-height: 1.5;
+
+.special-food img {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.special-food h2 {
+  color: #0a75ad;
+  font-size: 1.5rem;
+}
+
+.special-food p {
   text-align: left;
+  margin-top: 0.5rem;
 }
-.description{
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.feature {
+  flex: 1;
+  text-align: center;
+  color: #0a75ad;
+  font-weight: bold;
+}
+
+.feature-icon {
+  font-size: 1.2rem;
+  color: #ffd700;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+/* Navigation Bar Styling */
+/* nav {
+  background-color: #0a75ad; 
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+} */
+
+.nav-links {
+  list-style: none;
   display: flex;
   justify-content: center;
+  gap: 2rem; /* Spacing between menu items */
+}
+
+.nav-links li {
+  position: relative; /* Required for underline hover effect */
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #070606; /* Text color */
+  transition: color 0.3s ease; /* Smooth transition for text color */
+  padding: 0.5rem 0; /* Padding for clickable area */
+}
+
+.nav-links a:hover {
+  color: #ffd700; /* Change text color on hover */
+}
+
+/* Hover Effect - Underline Animation */
+.nav-links a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ffd700; /* Underline color */
+  transition: width 0.3s ease; /* Smooth underline animation */
+  margin: 0 auto; /* Center the underline */
+}
+
+.nav-links a:hover::after {
+  width: 100%; /* Fully visible underline on hover */
+}
+
+/* Logout Button Special Styling */
+.logout a {
+  color: #ff4d4d; /* Distinctive color for logout */
+}
+
+.logout a:hover {
+  color: #ff3333; /* Darker red on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    padding: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav-links a {
+    font-size: 1.2rem; /* Larger font size for mobile */
+    text-align: center;
+  }
+}
+/* Special Features Container */
+.special-feature-container {
+  max-width: 1200px;
+  margin: 3rem auto;
+  text-align: center;
+  padding: 1rem;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Heading for Special Features */
+.feature-heading {
+  font-size: 2rem;
+  color: #0a75ad;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+/* Flexbox layout for cards */
+.special-features {
+  display: flex;
+  gap: 10rem; /* Space between the cards */
+  justify-content: center; /* Center align the cards */
+  flex-wrap: wrap; /* Ensures cards wrap on smaller screens */
+}
+.bar{
+  border: 0;
+    height: 2px;
+    background-color: #333; /* Change to desired color */
+    margin: 20px 0; /* Adjust spacing */
+}
+
+/* Individual Special Feature Card */
+.special-feature {
+  flex: 1 1 45%; /* Flex-grow: 1, Flex-shrink: 1, Base size: 45% */
+  max-width: 500px; /* Limit card width */
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensures content doesn't overflow card boundaries */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card hover effect */
+.special-feature:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+}
+
+/* Feature Image */
+.feature-image {
+  width: 100%; /* Image takes the full width of the card */
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd; /* Separates the image from content */
+}
+
+/* Feature Content */
+.feature-content {
+  padding: 1rem;
+  text-align: left;
+}
+
+.feature-content h2 {
+  font-size: 1.5rem;
+  color: #0a75ad;
+  margin-bottom: 0.5rem;
+}
+
+.feature-content p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Order Now Button */
+.order-now-button {
+  display: inline-block;
+  background-color: #0a75ad;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order-now-button:hover {
+  background-color: #094d75;
+}
+
+/* Responsive Design for Cards */
+@media (max-width: 768px) {
+  .special-feature {
+    flex: 1 1 100%; /* Cards take full width on smaller screens */
+  }
 }

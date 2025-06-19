@@ -32,6 +32,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { HomeImageComponent } from './home-image/home-image.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { SuccessMessageDialogComponentComponent } from './success-message-dialog-component/success-message-dialog-component.component';
+import { SlideshowComponent } from './slideshow/slideshow.component';
 
 
 
@@ -63,6 +64,7 @@ import { SuccessMessageDialogComponentComponent } from './success-message-dialog
     SignUpComponent,
     HomeImageComponent,
     SuccessMessageDialogComponentComponent,
+    SlideshowComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,26 +1,70 @@
 <header>
   <img
-    src="../../assets/logo-for-the-family-restaurant-good-food-vector.jpg"
+    src="../../assets/Akashdeep pvtltd Logo.jpg"
     alt=""
     id="restoLogo"/>
   <nav>
     <ul class="nav-links">
-      <li><a href="#" routerLink="/MenuSelection">Menu</a></li>
+      <li><a href="#" routerLink="/MenuSelection">About</a></li>
       <li><a href="#" routerLink="/Services">Services</a></li>
-      <li><a href="#" routerLink="/About">About</a></li>
+      <li><a href="#" routerLink="/About">Menu</a></li>
+      <li><a href="#" routerLink="/OrderOnline">Food Products</a></li>
       <li><a href="#" routerLink="/Contact">Contact</a></li>
       <li><a href="#" routerLink="/OrderOnline">Order Online</a></li>
-      <li class="logout"><a href="#" routerLink="/Login">Logout</a></li>
+      <li class="logout"><a href="#" routerLink="/Login">Login</a></li>
     </ul>
   </nav>
 </header>
-
-<h1 class="heading">{{ userName }} Welcome To Family Restaurant</h1>
+<hr class="bar">
+<h1 class="heading">SHRI AKASHDEEPA FOOD PRIVATE LIMITED</h1>
 <div class="body">
-  <button routerLink="/bookingTable" type="button" class="bookTableButton">
-    BOOK A TABLE
-  </button>
+ 
+  <div class="special-feature-container">
+    <div class="special-features">
+    
+    <div class="special-feature">
+      <img
+        src="../../assets/Mane Aduge Logo.jpg"
+        alt="Mane Aduge Halli Uta"
+        class="feature-image"
+      />
+      <div class="feature-content">
+        <h2>Mane Aduge Halli Uta</h2>
+        <p>
+          Experience the authentic taste of rural Karnataka with our "Mane Aduge
+          Halli Uta" - a wholesome, traditional meal that combines the richness
+          of fresh, local ingredients and time-honored recipes. Enjoy dishes
+          like Ragi Mudde, Soppu Saaru, Ghee Rice, and more, served with love
+          and warmth that reminds you of home.
+        </p>
+        <button class="order-now-button">Order Now</button>
+      </div>
+    </div>
+
+    <!-- Mane Aduge Halli Tindi Card -->
+    <div class="special-feature">
+      <img
+        src="../../assets/Mane aduge halli tindi.jpeg"
+        alt="Mane Aduge Halli Tindi"
+        class="feature-image"
+      />
+      <div class="feature-content">
+        <h2>Mane Aduge Halli Tindi</h2>
+        <p>
+          Relish the flavors of traditional Karnataka breakfasts with "Mane
+          Aduge Halli Tindi." From crispy Ragi Rotti to soft Akki Rotti,
+          flavorful Chutneys, and the ever-delicious Benne Dose, our Halli Tindi
+          menu brings you the best of Karnataka's culinary heritage for a
+          perfect start to your day.
+        </p>
+        <button class="order-now-button">Order Now</button>
+      </div>
+    </div>
+  </div>
 </div>
+</div>
+
+<app-slideshow></app-slideshow>
 <div class="special-offer-container">
   <h1>Today's Special </h1>
   <h1>&#8595;</h1>
@@ -147,10 +191,10 @@
       />
     </div>
     <div class="footer-contact">
-      <p>3rd Sector HSR Layout,</p>
-      <p>Banglore</p>
-      <p>Email: familyresto@gmail.com</p>
-      <p>Phone: +91-80-1234 5678</p>
+      <p>#2188 Nuthan collage Road Near coffee day Vidhya Nagar</p>
+      <p>Davangere -577005</p>
+      <p>Email: akashdeepafoodsdvg@gmail.com</p>
+      <p>Phone: +91-63-6354 3487 , +91-799 6666 199</p>
     </div>
     <div class="footer-social">
       <a href="#"
@@ -175,28 +219,3 @@
     <p>&copy; 2023 Your Hotel. All rights reserved.</p>
   </div>
 </footer>
-
-<!-- <div class="products">
-    <label for="prodName">Product Name:</label>
-    <input [(ngModel)]="prodName" type="text" placeholder="Enter the Product Name"><br>
-
-    <label for="prodDescription">Product Description:</label>
-    <input [(ngModel)]="prodDescription" type="text" placeholder="Enter the Product Description"><br>
-
-    <label for="prodPrice">Product Price:</label>
-    <input [(ngModel)]="prodPrice" type="number" placeholder="Enter the Product Price"><br>
-
-    <label for="prodAvail">Product Availability:</label>
-    <input [(ngModel)]="prodAvail" type="checkbox" class="checkbox"><br>
-</div>
-
-<div>
-    <button (click)="addProduct()" type="button">Add</button>
-    <button (click)="finish()" type="button">Finish</button>
-</div>
-<div *ngFor="let item of items" class="item">{{item}}</div>
-
-<div class="search">
-    <label for="search">Search:</label>
-    <input [(ngModel)]="search" type="text" placeholder="Search Products">
-</div> -->

@@ -1,0 +1,55 @@
+/* Full-page slideshow container */
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full height of the viewport */
+  overflow: hidden;
+  margin: 0; /* Remove default margins */
+}
+
+/* Individual slide styling */
+.slide {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.slide.active {
+  display: block;
+  animation: fadeEffect 1.5s ease-in-out; /* Smooth fade transition */
+}
+
+/* Image styling to cover the entire screen */
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+  object-position: center; /* Centers the image within the container */
+}
+
+/* Caption styling */
+.caption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Smooth fade effect animation */
+@keyframes fadeEffect {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}

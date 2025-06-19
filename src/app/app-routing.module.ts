@@ -22,7 +22,7 @@ import { MainHomeComponent } from './main-home/main-home.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/main-home', pathMatch: 'full' },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   {path:'main-home',component:MainHomeComponent},
   {path:'SignUp',component:SignUpComponent},
   { path: 'bookingTable', component: BookingTableComponent },
